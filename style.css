@@ -124,4 +124,21 @@ footer {
 .slide-up {
     animation: slideUp 1s ease;
 }
+/* Multicolored Gradient Text */
+.rainbow-text {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c, #ffbf00, #1a73e8, #00c6ff, #7d2ae8);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    animation: gradientMove 5s ease infinite;
+    background-size: 300%;
+}
+
+/* Smooth gradient animation */
+@keyframes gradientMove {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 0% }
+}
+
 
