@@ -1,154 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOWTHAM K | Portfolio</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background: #1a73e8;
-            padding: 30px;
-            text-align: center;
-            color: white;
-        }
-
-        h2 {
-            border-left: 5px solid #1a73e8;
-            padding-left: 10px;
-        }
-
-        section {
-            padding: 20px 40px;
-        }
-
-        ul {
-            list-style-type: square;
-        }
-
-        /* Project Cards */
-        .project-card {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 6px;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-        }
-
-        /* Footer */
-        footer {
-            background: #1a73e8;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        /* Certifications and POR Sections */
-        .certifications, .por {
-            background: white;
-            padding: 25px 30px;
-            margin: 20px 40px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .certifications h2, .por h2 {
-            margin-bottom: 15px;
-            font-size: 1.6rem;
-            border-left: 5px solid #1a73e8;
-            padding-left: 12px;
-        }
-
-        .certifications ul, .por ul {
-            list-style-type: square;
-            margin-left: 20px;
-        }
-
-        .certifications li, .por li {
-            margin: 8px 0;
-            font-size: 1.1rem;
-        }
-
-        /* Intro Card (No Photo) */
-        .intro-card {
-            background: white;
-            margin: 30px auto;
-            padding: 30px;
-            max-width: 900px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-            position: relative;
-            transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
-            animation: fadeIn 1.2s ease-in-out;
-        }
-
-        .intro-card:hover {
-            box-shadow: 0 0 20px rgba(26, 115, 232, 0.6), 
-                        0 0 40px rgba(26, 115, 232, 0.4),
-                        0 0 60px rgba(26, 115, 232, 0.2);
-            border: 2px solid #1a73e8;
-            transform: translateY(-5px);
-        }
-
-        /* Intro Text */
-        .intro-text h2 {
-            margin: 0;
-            font-size: 2rem;
-        }
-
-        .intro-text p {
-            font-size: 1.1rem;
-            margin-top: 8px;
-            color: #444;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .fade-in {
-            animation: fadeIn 1.2s ease-in-out;
-        }
-
-        .slide-up {
-            animation: slideUp 1s ease;
-        }
-
-        /* Multicolored Gradient Text */
-        .rainbow-text {
-            background: linear-gradient(90deg, #ff4b2b, #ff416c, #ffbf00, #1a73e8, #00c6ff, #7d2ae8);
-            -webkit-background-clip: text;
-            color: transparent;
-            font-weight: 800;
-            animation: gradientMove 5s ease infinite;
-            background-size: 300%;
-        }
-
-        @keyframes gradientMove {
-            0% { background-position: 0%; }
-            50% { background-position: 100%; }
-            100% { background-position: 0%; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOWTHAM K | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -157,7 +13,7 @@
     <p>B.Tech AI & DS @ CIT | SQL Certified | Quiz Club Director | NSS Coordinator | Public Speaker | Healthcare Technology Enthusiast</p>
 </header>
 
-<!-- ⭐ INTRO CARD WITH MULTICOLORED TITLE -->
+<!-- Intro Card -->
 <section class="intro-card">
     <div class="intro-text">
         <h2 class="fade-in rainbow-text">Hello, I'm Gowtham 👋</h2>
@@ -230,8 +86,8 @@
 
 <section class="contact">
     <h2>Contact</h2>
-    <p><strong>GitHub:</strong> <a href="https://github.com/2403717624321014-sudo/2403717624321014-sudo.github.io">github.com/2403717624321014-sudo</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gowtham-k-26749b326">linkedin.com/in/gowtham-k</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/2403717624321014-sudo/2403717624321014-sudo.github.io" target="_blank">github.com/2403717624321014-sudo</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gowtham-k-26749b326" target="_blank">linkedin.com/in/gowtham-k</a></p>
 </section>
 
 <footer>
@@ -240,6 +96,3 @@
 
 </body>
 </html>
-
-
-
