@@ -42,3 +42,27 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+.certifications, .por {
+    background: white;
+    padding: 25px 30px;
+    margin: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.certifications h2, .por h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    border-left: 5px solid #1a73e8;
+    padding-left: 12px;
+}
+
+.certifications ul, .por ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.certifications li, .por li {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
