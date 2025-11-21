@@ -212,3 +212,20 @@ footer {
     color: white;
 }
 
+/* Event Cards */
+.event-card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #1e90ff, #00bfff, #87cefa, #add8e6);
+    color: white;
+}
+
