@@ -128,5 +128,18 @@ footer {
     100% { background-position: 0% }
 }
 
+/* Glowing border for intro card */
+.intro-card {
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.intro-card:hover {
+    box-shadow: 0 0 20px rgba(26, 115, 232, 0.6), 
+                0 0 40px rgba(26, 115, 232, 0.4),
+                0 0 60px rgba(26, 115, 232, 0.2);
+    border: 2px solid #1a73e8;
+    transform: translateY(-5px);
+}
 
 
