@@ -304,14 +304,19 @@ h2 i {
     font-size: 1.5rem; /* nice size for headers */
     vertical-align: middle;
 }
+
+/* Smooth Scroll Effect */
 html {
   scroll-behavior: smooth;
 }
+
+/* Sticky Navigation Bar */
 header {
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
 footer {
   text-align: center;
   padding: 20px;
@@ -319,18 +324,8 @@ footer {
   color: white;
   margin-top: 30px;
 }
-.resume-btn {
-  background: linear-gradient(to right, #1a73e8, #6a11cb);
-  padding: 12px 22px;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-}
-.resume-btn:hover {
-  opacity: 0.9;
-}
+
+/* Hover Glow Effect to Cards */
 .card:hover {
   transform: scale(1.03);
   box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
