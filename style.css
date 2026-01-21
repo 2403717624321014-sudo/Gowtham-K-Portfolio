@@ -300,40 +300,123 @@ a:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
-/* Trainings & Development Section */
-.trainings h2 {
-    margin-bottom: 15px;
-    font-size: 1.6rem;
-    border-left: 5px solid #1a73e8;
-    padding-left: 12px;
-}
+/* ================================
+   TRAININGS & DEVELOPMENT PROGRAMS
+   ================================ */
 
-.trainings ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-.trainings li {
-    margin: 8px 0;
-    font-size: 1.1rem;
-}
 .trainings {
-    background: linear-gradient(135deg, #ff6ec7, #b76eff, #6ec7ff, #6effb7, #ffd36e);
-    color: white;
-    padding: 25px 30px;
-    margin: 20px 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(
+        135deg,
+        #ff6ec7,
+        #b76eff,
+        #6ec7ff,
+        #6effb7,
+        #ffd36e
+    );
+    padding: 30px 35px;
+    margin: 25px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
-.trainings:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+/* Section Heading */
+.trainings h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    border-left: 6px solid #ffffff;
+    padding-left: 14px;
+    color: #ffffff;
 }
-h2 i {
-    font-size: 1.5rem; /* nice size for headers */
-    vertical-align: middle;
+
+/* =========================
+   FLY-Scholar Training Card
+   ========================= */
+
+.trainings .training-card {
+    background: #ffffff;
+    color: #222222;
+    padding: 22px 24px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    border-left: 6px solid #1a73e8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Title */
+.trainings .training-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1a73e8;
+    font-size: 1.4rem;
+}
+
+/* Sub-headings inside card */
+.trainings .training-card h4 {
+    margin-top: 14px;
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+    color: #0b5394;
+}
+
+/* Paragraphs */
+.trainings .training-card p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 8px 0;
+    color: #333333;
+}
+
+/* Competency list */
+.trainings .training-card ul {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.trainings .training-card ul li {
+    font-size: 1.05rem;
+    margin: 6px 0;
+    color: #333333;
+}
+
+/* Highlight line */
+.trainings .training-card .highlight {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #0b5394;
+}
+
+/* =========================
+   OTHER TRAININGS LIST
+   ========================= */
+
+.trainings > ul {
+    list-style-type: square;
+    margin-left: 22px;
+}
+
+.trainings > ul li {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE ADJUSTMENTS
+   ========================= */
+
+@media (max-width: 768px) {
+    .trainings {
+        margin: 20px 15px;
+        padding: 25px 20px;
+    }
+
+    .trainings .training-card {
+        padding: 18px;
+    }
+
+    .trainings h2 {
+        font-size: 1.5rem;
+    }
 }
 
 /* Smooth Scroll Effect */
