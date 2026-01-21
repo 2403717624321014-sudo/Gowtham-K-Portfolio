@@ -141,12 +141,13 @@ a:hover {
     font-size: 1.6rem;
 }
 
-.training-card {
+.industry-training .training-card {
     margin-top: 15px;
     padding: 20px;
     background: #f9f9ff;
     border-radius: 8px;
 }
+
 
 .training-card h3 {
     margin-bottom: 8px;
