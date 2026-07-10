@@ -260,6 +260,73 @@ a:hover {
 }
 
 /* =========================
+   ACHIEVEMENTS
+========================= */
+
+.achievements{
+    background:#fff;
+    padding:25px 30px;
+    margin:20px 40px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,.12);
+}
+
+.achievements h2{
+    border-left:5px solid #1a73e8;
+    padding-left:12px;
+    font-size:1.6rem;
+}
+
+.achievement-card{
+    margin-top:20px;
+    padding:22px;
+    background:#f9f9ff;
+    border-left:6px solid #1a73e8;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.achievement-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+.achievement-card h3{
+    color:#1a73e8;
+    margin-bottom:10px;
+}
+
+.achievement-card p{
+    line-height:1.7;
+}
+
+.achievement-card a{
+    color:#1a73e8;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.achievement-card a:hover{
+    text-decoration:underline;
+}
+
+.achievement-points{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:18px 0;
+}
+
+.achievement-points span{
+    background:#1a73e8;
+    color:#fff;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:.9rem;
+}
+
+/* =========================
    HACKATHONS
    ========================= */
 
@@ -425,6 +492,41 @@ a:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(26,115,232,0.35);
     color: white;
+}
+
+/* =========================
+   TRAINING PROJECTS
+========================= */
+
+.training-card h4 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color: #1a73e8;
+    font-size: 1.15rem;
+}
+
+.training-card ul:not(.tech-stack) {
+    margin-left: 20px;
+}
+
+.training-card ul:not(.tech-stack) li {
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.training-card ul:not(.tech-stack) li strong {
+    color: #0b5394;
+    font-size: 1rem;
+}
+
+.training-card ul:not(.tech-stack) li a {
+    color: #1a73e8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.training-card ul:not(.tech-stack) li a:hover {
+    text-decoration: underline;
 }
 
 /* =========================
