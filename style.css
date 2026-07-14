@@ -26,11 +26,11 @@ body {
 header{
     background:#1a73e8;
     color:white;
-    text-align:center;
 }
 
 .hero{
     padding:35px 20px;
+    text-align:center;
 }
 
 .hero h1{
@@ -1321,21 +1321,24 @@ footer {
     }
 }
 
-/* Navbar */
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-    background:#1a73e8;
     position:sticky;
     top:0;
     z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 40px;
+
+    background:#1a73e8;
     box-shadow:0 3px 10px rgba(0,0,0,.18);
 }
-
-/* Logo */
 
 .logo{
     color:#fff;
@@ -1344,21 +1347,22 @@ footer {
     white-space:nowrap;
 }
 
-/* Navigation */
-
 .nav-links{
     display:flex;
     align-items:center;
-    gap:30px;
+    gap:24px;
 
     list-style:none;
     margin:0;
     padding:0;
 
     overflow-x:auto;
+    overflow-y:hidden;
+
     white-space:nowrap;
 
     scrollbar-width:none;
+    -ms-overflow-style:none;
 }
 
 .nav-links::-webkit-scrollbar{
@@ -1372,11 +1376,32 @@ footer {
 .nav-links a{
     color:white;
     text-decoration:none;
-    font-weight:500;
     font-size:15px;
+    font-weight:500;
+    padding:8px 0;
     transition:.3s;
 }
 
 .nav-links a:hover{
     color:#ffd54f;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:12px 15px;
+    }
+
+    .logo{
+        font-size:1.2rem;
+    }
+
+    .nav-links{
+        gap:18px;
+    }
+
+    .nav-links a{
+        font-size:14px;
+    }
+
 }
