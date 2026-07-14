@@ -1374,15 +1374,18 @@ footer {
 }
 
 .nav-links a{
+    display:block;
     color:white;
     text-decoration:none;
     font-size:15px;
     font-weight:500;
-    padding:8px 0;
-    transition:.3s;
+    padding:8px 12px;
+    border-radius:6px;
+    transition:all .3s ease;
 }
 
 .nav-links a:hover{
+    background:rgba(255,255,255,0.15);
     color:#ffd54f;
 }
 
