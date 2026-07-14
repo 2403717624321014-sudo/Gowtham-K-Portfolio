@@ -344,7 +344,6 @@ a:hover {
 
 }
 
-
 /* =========================
    HACKATHONS
    ========================= */
@@ -358,6 +357,8 @@ a:hover {
 }
 
 .hackathons h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
     border-left: 5px solid #ff6600;
     padding-left: 12px;
 }
@@ -365,16 +366,37 @@ a:hover {
 .hackathon-card {
     background: #f9f9ff;
     padding: 20px;
+    margin-top: 20px;
     border-radius: 8px;
     border-left: 5px solid #ff6600;
-    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
 }
 
 .hackathon-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
+.hackathon-card h3{
+    color:#ff6600;
+    margin-bottom:10px;
+}
+
+.hackathon-card p{
+    line-height:1.7;
+}
+
+.hackathon-card ul{
+    margin-left:22px;
+}
+
+.hackathon-card li{
+    margin:6px 0;
+}
 /* =========================
    INTERNSHIP
    ========================= */
@@ -841,39 +863,101 @@ a:hover {
     font-size: 1.1rem;
 }
 
-/* =========================
-   POR CARDS
-   ========================= */
+/* Certification Card */
 
-.por-card {
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease,
-        color 0.3s ease;
+.certification-card{
+    margin-top:20px;
+    padding:20px;
+    background:#f9f9ff;
+    border-left:6px solid #1a73e8;
+    border-radius:8px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    transition:transform .3s ease, box-shadow .3s ease;
 }
 
-.por-card:hover {
-    transform: translateY(-3px);
+.certification-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
 
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+.certification-card ul{
+    margin-left:20px;
+}
 
-    background: linear-gradient(
-        135deg,
-        #ff7f50,
-        #ff6347,
-        #ff4500,
-        #ffa07a
-    );
+.certification-card li{
+    margin-bottom:18px;
+    line-height:1.7;
+}
 
-    color: white;
+.certification-card strong{
+    color:#1a73e8;
+}
+
+/* =========================
+   POSITIONS OF RESPONSIBILITY
+========================= */
+
+.por-card{
+    margin-top:20px;
+    padding:20px;
+    background:#f9f9ff;
+    border-left:6px solid #1a73e8;
+    border-radius:8px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.por-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.por-card h3{
+    color:#1a73e8;
+    margin-bottom:10px;
+}
+
+.por-card p{
+    line-height:1.7;
+}
+
+/* =========================
+   EXTRA CURRICULAR CARD
+   ========================= */
+
+.activity-card{
+    margin-top:20px;
+    padding:20px;
+    background:#f9f9ff;
+    border-left:6px solid #ffbc42;
+    border-radius:8px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.activity-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.activity-card h3{
+    color:#ff8c00;
+    margin-bottom:12px;
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+.activity-card p{
+    line-height:1.7;
+}
+
+.activity-card ul{
+    margin-left:22px;
+}
+
+.activity-card li{
+    margin:8px 0;
+    line-height:1.7;
 }
 
 /* =========================
@@ -897,6 +981,17 @@ a:hover {
     padding-left: 12px;
 }
 
+.extra-curricular h2{
+    border-left:5px solid #ffbc42;
+}
+
+.event-card h3{
+    color:#1a73e8;
+    margin-bottom:12px;
+    font-size:1.2rem;
+    font-weight:600;
+}
+
 .events li,
 .extra-curricular li {
     margin: 8px 0;
@@ -905,133 +1000,101 @@ a:hover {
 
 /* =========================
    EVENT CARDS
-   ========================= */
+========================= */
 
-.event-card {
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease,
-        color 0.3s ease;
+.event-card{
+    margin-top:20px;
+    padding:20px;
+    background:#f9f9ff;
+    border-left:6px solid #1a73e8;
+    border-radius:8px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+.event-card ul{
+    margin-left:22px;
 }
 
-.event-card:hover {
-    transform: translateY(-3px);
+.event-card li{
+    margin:8px 0;
+    line-height:1.7;
+}
+.event-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
 
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-
-    background: linear-gradient(
-        135deg,
-        #1e90ff,
-        #00bfff,
-        #87cefa,
-        #add8e6
-    );
-
-    color: white;
+.event-card p{
+    line-height:1.7;
 }
 
 /* =========================
    TRAININGS SECTION
-   ========================= */
+========================= */
 
-.trainings {
-    background: linear-gradient(
-        135deg,
-        #ff6ec7,
-        #b76eff,
-        #6ec7ff,
-        #6effb7,
-        #ffd36e
-    );
-
-    padding: 30px 35px;
-    margin: 25px 40px;
-    border-radius: 12px;
-
-    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
-
-    color: white;
+.trainings{
+    background:white;
+    padding:25px 30px;
+    margin:20px 40px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
 }
 
-.trainings h2 {
-    font-size: 1.7rem;
-    margin-bottom: 20px;
-    border-left: 6px solid white;
-    padding-left: 14px;
-    color: white;
+.trainings h2{
+    margin-bottom:15px;
+    font-size:1.6rem;
+    border-left:5px solid #1a73e8;
+    padding-left:12px;
 }
 
-/* Training Card */
-
-.trainings .training-card {
-    background: white;
-    padding: 22px 24px;
-    margin-bottom: 22px;
-    border-radius: 10px;
-    border-left: 6px solid #1a73e8;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+.trainings .training-card{
+    margin-top:20px;
+    padding:20px;
+    background:#f9f9ff;
+    border-left:6px solid #1a73e8;
+    border-radius:8px;
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+    transition:transform .3s ease, box-shadow .3s ease;
 }
 
-/* Force Text Visibility */
-
-.trainings .training-card,
-.trainings .training-card * {
-    color: #222 !important;
+.trainings .training-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
 
-.trainings .training-card h3 {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 1.4rem;
-    color: #1a73e8 !important;
+.trainings .training-card h3{
+    color:#1a73e8;
+    margin-bottom:10px;
 }
 
-.trainings .training-card h4 {
-    margin-top: 14px;
-    margin-bottom: 8px;
-    font-size: 1.15rem;
-    color: #0b5394 !important;
+.trainings .training-card h4{
+    color:#0b5394;
+    margin-top:15px;
+    margin-bottom:10px;
 }
 
-.trainings .training-card p {
-    font-size: 1.05rem;
-    line-height: 1.6;
+.trainings .training-card p{
+    line-height:1.7;
 }
 
-.trainings .training-card ul {
-    margin-left: 22px;
+.trainings .training-card a{
+    color:#1a73e8;
+    text-decoration:none;
+    font-weight:600;
 }
 
-.trainings .training-card ul li {
-    font-size: 1.05rem;
-    margin: 6px 0;
+.trainings .training-card a:hover{
+    text-decoration:underline;
 }
 
-.trainings .training-card .highlight {
-    margin-top: 12px;
-    font-weight: 600;
-    color: #0b5394 !important;
-}
-
-/* Other Trainings List */
-
-.trainings > ul {
-    list-style-type: square;
-    margin-left: 22px;
-}
-
-.trainings > ul li {
-    font-size: 1.1rem;
-    margin: 8px 0;
-    color: white;
+.trainings .training-card .highlight{
+    margin-top:15px;
+    padding:15px;
+    background:#eef6ff;
+    border-left:5px solid #1a73e8;
+    border-radius:8px;
+    font-weight:600;
+    color:#0b5394;
 }
 
 /* =========================
@@ -1046,6 +1109,13 @@ a:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.resume-section h2{
+    margin-bottom:15px;
+    font-size:1.6rem;
+    border-left:5px solid #1a73e8;
+    padding-left:12px;
+}
+
 .resume-card {
     background: linear-gradient(135deg, #1a73e8, #6a11cb);
     color: white;
@@ -1055,12 +1125,26 @@ a:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
+.resume-card{
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.resume-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
 .resume-card p {
     font-size: 1.1rem;
     margin-bottom: 25px;
     line-height: 1.7;
 }
 
+.resume-card h3{
+    font-size:1.5rem;
+    margin-bottom:12px;
+    color:white;
+}
 .resume-buttons {
     display: flex;
     justify-content: center;
@@ -1075,7 +1159,7 @@ a:hover {
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -1119,12 +1203,54 @@ a:hover {
    CONTACT SECTION
    ========================= */
 
-.contact {
-    background: white;
-    padding: 25px 30px;
-    margin: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.contact{
+    background:white;
+    padding:25px 30px;
+    margin:20px 40px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.12);
+}
+
+.contact h2{
+    margin-bottom:15px;
+    font-size:1.6rem;
+    border-left:5px solid #1a73e8;
+    padding-left:12px;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:1.08rem;
+    line-height:1.7;
+}
+
+.contact a{
+    color:#1a73e8;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.contact a:hover{
+    color:#0b5394;
+    text-decoration:underline;
+}
+
+.contact{
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.contact:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+@media(max-width:768px){
+
+    .contact{
+        margin:15px;
+        padding:20px;
+    }
+
 }
 
 /* =========================
