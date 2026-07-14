@@ -1322,3 +1322,61 @@ footer {
         font-size: 1.6rem;
     }
 }
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#1a73e8;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* Logo */
+
+.logo{
+    color:#fff;
+    font-size:1.6rem;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    overflow-x:auto;
+    white-space:nowrap;
+
+    scrollbar-width:none;      /* Firefox */
+}
+
+.nav-links::-webkit-scrollbar{
+    display:none;
+}
+
+.nav-links li{
+    flex-shrink:0;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd54f;
+}
